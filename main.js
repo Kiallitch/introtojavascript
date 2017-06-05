@@ -3,25 +3,25 @@
 // 1.
 // What does `givenName` equal right now?
 var givenName;
-// A: undefined data type
+// A: undefined
 
 
 // 2.
 // What is `givenName` set to right now?
 givenName = "Tim";
-// A: The string "Tim"
+// A: "Tim"
 
 
 // 3.
 // What is `givenName` set to right now?
 givenName = givenName;
-// A: the string givenName
+// A: Tim
 
 
 // 4.
 // What is `greeting` set to?
 var greeting = "Hello, how are you? " + givenName;
-// A: "Hello, how are you? " + givenName"
+// A: "Hello, how are you? Tim"
 
 
 // 5.
@@ -29,13 +29,13 @@ var greeting = "Hello, how are you? " + givenName;
 var high = 50;
 var low  = 10;
 var math = high - low;
-// A: high - low
+// A: 40
 
 
 // 6.
 // What is `math` set to?
 math = high - "5";
-// A: high - "5";
+// A: 45
 
 
 // 7.
@@ -46,9 +46,8 @@ var born = 1984;
 var today = 2017;
 // A:
 
-var today = 2017;
-var born = 1984;
-var age = today - born;
+var timsAge = today - born;
+var timsString = "Tim is" + timsAge
 
 
 // 8.
@@ -80,10 +79,10 @@ var myBoolean;
 var myUndefined;
 // A:
 
-var myNumber = 1;
+var myNumber = 3;
 var myString = "String";
-var myBoolean = True/False;
-var myUndefined;
+var myBoolean = True;
+var myUndefined = undefined;
 
 // For questions 11 - 19: List which boolean value will be stored in each variable. (Remember: `==` does not check data type)
 
@@ -107,7 +106,7 @@ var a = (null == null);
 // A. True
 
 
-// 25.
+// 15.
 var b = (undefined == undefined);
 // A. True
 
@@ -129,7 +128,7 @@ var e = (NaN == null);
 
 // 19.
 var f = (NaN == NaN);
-// A. NaN
+// A. False
 
 
 // 20.
@@ -138,7 +137,7 @@ var f = (NaN == NaN);
 // A:
 var thirsty = true;
 
-if(thirsty){
+if (thirsty){
   console.log("I'm parched!");
 } else {
   console.log("I've had enough to drink.");
@@ -163,7 +162,7 @@ if(""){
 } else {
 	console.log("False!");
 }
-// A: True
+// A: False
 
 
 // 23.
@@ -184,7 +183,7 @@ if(false){
 } else {
 	console.log("False!");
 }
-// A: True
+// A: False
 
 
 // 25.
@@ -193,7 +192,7 @@ if(-5 && 5){
 } else {
 	console.log("False!");
 }
-// A: False
+// A: True
 
 
 // 26.
@@ -211,7 +210,7 @@ if({}){
 } else {
 	console.log("False!");
 }
-// A: False
+// A: True
 
 
 // 28.
